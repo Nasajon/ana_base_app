@@ -30,22 +30,27 @@ dependencies:
   flutter:
     sdk: flutter
 
+  flutter_core:
+    git:
+      url: git@github.com:Nasajon/flutter_core.git
+      ref: main # branch name
+
   flutter_dependencies:
     git:
       url: git@github.com:Nasajon/flutter_dependencies.git
       ref: main # branch name
 
-  flutter_core:
-    git:
-      url: git@github.com:Nasajon/flutter_core.git
-      ref: main # branch name
-  # flutter_core:
-  #   path: "../flutter_core"
-
   meutrabalhoapp:
     git:
       url: git@github.com:Nasajon/meutrabalho_mobile.git
       ref: development # branch name
+
+  # flutter_core:
+  #   path: "../flutter_core"
+  # flutter_dependencies:
+  #   path: "../flutter_dependencies"
+  # meutrabalhoapp:
+  #   path: "../meutrabalho_mobile"
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
