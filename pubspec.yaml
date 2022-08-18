@@ -39,6 +39,8 @@ dependencies:
     git:
       url: git@github.com:Nasajon/flutter_core.git
       ref: main # branch name
+  # flutter_core:
+  #   path: "../flutter_core"
 
   meutrabalhoapp:
     git:
