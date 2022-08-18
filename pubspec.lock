@@ -233,16 +233,20 @@ packages:
   flutter_core:
     dependency: "direct main"
     description:
-      path: "../flutter_core"
-      relative: true
-    source: path
+      path: "."
+      ref: main
+      resolved-ref: "2ec0e774d6e8201da513d6e1fadfa7e6a72a3613"
+      url: "git@github.com:Nasajon/flutter_core.git"
+    source: git
     version: "0.0.1"
   flutter_dependencies:
     dependency: "direct main"
     description:
-      path: "../flutter_dependencies"
-      relative: true
-    source: path
+      path: "."
+      ref: main
+      resolved-ref: "922e542c9fb680ca8a05f54f04f16d252d850bff"
+      url: "git@github.com:Nasajon/flutter_dependencies.git"
+    source: git
     version: "0.0.1"
   flutter_lints:
     dependency: "direct dev"
@@ -430,9 +434,11 @@ packages:
   meutrabalhoapp:
     dependency: "direct main"
     description:
-      path: "../meutrabalho_mobile"
-      relative: true
-    source: path
+      path: "."
+      ref: first-viewmodel
+      resolved-ref: "3baec4370f8992add6e4adc9db051283ad03e8c4"
+      url: "git@github.com:Nasajon/meutrabalho_mobile.git"
+    source: git
     version: "0.0.1"
   mime_type:
     dependency: transitive
