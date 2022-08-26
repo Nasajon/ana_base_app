@@ -55,7 +55,7 @@ node('aws-codebuild'){
                 def bucket = 'ana-admissao-developer'
                 s3Upload(
                     bucket:"${bucket}",
-                    path:"CI",
+                    path:"",
                     includePathPattern: '**/*',
                     workingDir: 'build/web/'
                 )
