@@ -10,6 +10,10 @@ node('aws-codebuild'){
             checkout scm
         }
     }
+    
+    stage('Environment Config') {
+      sh "auto_config"
+    }
 
     // stage('Test'){
     //     docker.image('cirrusci/flutter:3.0.5').inside('-v /root/.ssh:/root/.ssh'){    
@@ -52,7 +56,7 @@ node('aws-codebuild'){
             }
 
             else if (env.BRANCH_NAME == 'development'){
-                def bucket = 'ana-admissao-developer'
+                def bucket = 'ana-admissao-dev'
                 s3Upload(
                     bucket:"${bucket}",
                     path:"",
