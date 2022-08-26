@@ -51,8 +51,8 @@ node('aws-codebuild'){
                 )
             }
 
-            else if (env.BRANCH_NAME == 'ci_test'){
-                def bucket = 'ana-admissao-dev'
+            else if (env.BRANCH_NAME == 'development'){
+                def bucket = 'ana-admissao-developer'
                 s3Upload(
                     bucket:"${bucket}",
                     path:"CI",
