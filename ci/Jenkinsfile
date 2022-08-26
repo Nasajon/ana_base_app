@@ -10,6 +10,10 @@ node('aws-codebuild'){
             checkout scm
         }
     }
+    
+    stage('Environment Config') {
+      sh "auto_config"
+    }
 
     // stage('Test'){
     //     docker.image('cirrusci/flutter:3.0.5').inside('-v /root/.ssh:/root/.ssh'){    
@@ -25,12 +29,13 @@ node('aws-codebuild'){
 
     docker.image('fischerscode/flutter:3.0.5').inside("-v /root/.ssh:/root/.ssh"){    
         stage('Build'){
+            sh 'git config --global --add safe.directory /home/flutter/flutter-sdk'
             sh 'flutter build web'
         }
     }
 
     stage('Upload to AWS'){
-        withAWS(credentials: 'JENKINS_UPLOAD_S3', region: 'sa-east-1'){
+        withAWS(credentials: 'JENKINS_UPLOAD_S3', region: 'us-west-2'){
             if(env.BRANCH_NAME == 'production'){
                 def bucket = 'ana-admissao-prod'
                 s3Upload(
@@ -51,8 +56,8 @@ node('aws-codebuild'){
                 )
             }
 
-            else if (env.BRANCH_NAME == 'development'){
-                def bucket = 'ana-admissao-dev'
+            else if (env.BRANCH_NAME == 'main'){
+                def bucket = 'ana-admissao-developer'
                 s3Upload(
                     bucket:"${bucket}",
                     path:"",
