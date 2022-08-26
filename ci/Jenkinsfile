@@ -23,7 +23,7 @@ node('aws-codebuild'){
     //     }
     // }
 
-    docker.image('fischerscode/flutter:3.0.5').inside("-v /root/.ssh:/root/.ssh"){    
+    docker.image('cirrusci/flutter:3.0.0').inside("-v /root/.ssh:/root/.ssh"){    
         stage('Build'){
             sh 'flutter build web'
         }
@@ -51,11 +51,11 @@ node('aws-codebuild'){
                 )
             }
 
-            else if (env.BRANCH_NAME == 'development'){
+            else if (env.BRANCH_NAME == 'ci_test'){
                 def bucket = 'ana-admissao-dev'
                 s3Upload(
                     bucket:"${bucket}",
-                    path:"",
+                    path:"CI",
                     includePathPattern: '**/*',
                     workingDir: 'build/web/'
                 )
