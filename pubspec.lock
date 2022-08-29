@@ -298,6 +298,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  fluttericon:
+    dependency: transitive
+    description:
+      name: fluttericon
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.0"
   glob:
     dependency: transitive
     description:
@@ -435,8 +442,8 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: first-viewmodel
-      resolved-ref: "3baec4370f8992add6e4adc9db051283ad03e8c4"
+      ref: development
+      resolved-ref: dca67c402c3f98903eccad1011fb243641adf8f6
       url: "git@github.com:Nasajon/meutrabalho_mobile.git"
     source: git
     version: "0.0.1"

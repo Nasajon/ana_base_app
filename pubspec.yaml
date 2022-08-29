@@ -43,7 +43,7 @@ dependencies:
   meutrabalhoapp:
     git:
       url: git@github.com:Nasajon/meutrabalho_mobile.git
-      ref: first-viewmodel # branch name
+      ref: development # branch name
 
   # flutter_core:
   #   path: "../flutter_core"
