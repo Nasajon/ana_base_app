@@ -1,0 +1,70 @@
+node('aws-codebuild'){
+    def diretorio = pwd()
+    
+    stage('Clean') {
+        deleteDir()
+    }
+
+    stage('Fetch') {
+        timeout(time: 60, unit: 'SECONDS') {
+            checkout scm
+        }
+    }
+    
+    stage('Environment Config') {
+      sh "auto_config"
+    }
+
+    // stage('Test'){
+    //     docker.image('cirrusci/flutter:3.0.5').inside('-v /root/.ssh:/root/.ssh'){    
+    //         sh 'flutter test'
+    //     }
+    // }
+
+    // stage('Analyze'){
+    //     docker.image('cirrusci/flutter:3.0.5').inside('-v /root/.ssh:/root/.ssh'){    
+    //         sh 'flutter analyze'
+    //     }
+    // }
+
+    docker.image('fischerscode/flutter:3.0.5').inside("-v /root/.ssh:/root/.ssh"){    
+        stage('Build'){
+            sh 'git config --global --add safe.directory /home/flutter/flutter-sdk'
+            sh 'flutter build web'
+        }
+    }
+
+    stage('Upload to AWS'){
+        withAWS(credentials: 'JENKINS_UPLOAD_S3', region: 'us-west-2'){
+            if(env.BRANCH_NAME == 'production'){
+                def bucket = 'ana-admissao-prod'
+                s3Upload(
+                    bucket:"${bucket}",
+                    path:"",
+                    includePathPattern: '**/*',
+                    workingDir: 'build/web/'
+                )
+            }
+
+            else if (env.BRANCH_NAME == 'master'){
+                def bucket = 'ana-admissao'
+                s3Upload(
+                    bucket:"${bucket}",
+                    path:"",
+                    includePathPattern: '**/*',
+                    workingDir: 'build/web/'
+                )
+            }
+
+            else if (env.BRANCH_NAME == 'main'){
+                def bucket = 'ana-admissao-developer'
+                s3Upload(
+                    bucket:"${bucket}",
+                    path:"",
+                    includePathPattern: '**/*',
+                    workingDir: 'build/web/'
+                )
+            }
+        }
+    }
+}
