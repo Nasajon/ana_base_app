@@ -13,7 +13,7 @@ Future<void> main() async {
   }
   await FormDataService.load();
 
-  await AppConfiguration.loadFlavor(Flavor.dev);
+  // await AppConfiguration.loadFlavor(Flavor.dev);
 
   runApp(const AppWidget());
 }
