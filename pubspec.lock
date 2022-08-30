@@ -189,7 +189,7 @@ packages:
       name: equatable
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.0.3"
+    version: "2.0.5"
   fake_async:
     dependency: transitive
     description:
@@ -210,7 +210,7 @@ packages:
       name: file
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "6.1.3"
+    version: "6.1.4"
   file_picker:
     dependency: transitive
     description:
@@ -235,7 +235,7 @@ packages:
     description:
       path: "."
       ref: main
-      resolved-ref: "2ec0e774d6e8201da513d6e1fadfa7e6a72a3613"
+      resolved-ref: "55b405cc03df7c59ea63a35cd3f40b5ac1d6d9aa"
       url: "git@github.com:Nasajon/flutter_core.git"
     source: git
     version: "0.0.1"
@@ -244,10 +244,17 @@ packages:
     description:
       path: "."
       ref: main
-      resolved-ref: "922e542c9fb680ca8a05f54f04f16d252d850bff"
+      resolved-ref: ac5d229539978e3d8eef0821657aedb403f9c3b1
       url: "git@github.com:Nasajon/flutter_dependencies.git"
     source: git
     version: "0.0.1"
+  flutter_dotenv:
+    dependency: transitive
+    description:
+      name: flutter_dotenv
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "5.0.2"
   flutter_lints:
     dependency: "direct dev"
     description:
@@ -305,6 +312,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.0"
+  freezed_annotation:
+    dependency: transitive
+    description:
+      name: freezed_annotation
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.1.0"
   glob:
     dependency: transitive
     description:
@@ -389,6 +403,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.6.4"
+  json_annotation:
+    dependency: transitive
+    description:
+      name: json_annotation
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "4.6.0"
   lints:
     dependency: transitive
     description:
@@ -443,7 +464,7 @@ packages:
     description:
       path: "."
       ref: development
-      resolved-ref: dca67c402c3f98903eccad1011fb243641adf8f6
+      resolved-ref: "1c773251d0355086726b79e20a4ef0c8a7ffdd46"
       url: "git@github.com:Nasajon/meutrabalho_mobile.git"
     source: git
     version: "0.0.1"
@@ -525,7 +546,7 @@ packages:
       name: path_provider_android
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.0.19"
+    version: "2.0.20"
   path_provider_ios:
     dependency: transitive
     description:
@@ -740,7 +761,7 @@ packages:
       name: xdg_directories
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.2.0+1"
+    version: "0.2.0+2"
   xml:
     dependency: transitive
     description:
