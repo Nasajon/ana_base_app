@@ -27,10 +27,33 @@ node('aws-codebuild'){
     //     }
     // }
 
+    stage('Flutter clean'){
+        docker.image('cirrusci/flutter:3.0.5').inside('-v /root/.ssh:/root/.ssh'){    
+            sh 'flutter clean'
+        }
+    }
+
+    stage('Flutter pub get'){
+        docker.image('cirrusci/flutter:3.0.5').inside('-v /root/.ssh:/root/.ssh'){    
+            sh 'flutter pub get'
+        }
+    }
+
     docker.image('fischerscode/flutter:3.0.5').inside("-v /root/.ssh:/root/.ssh"){    
         stage('Build'){
             sh 'git config --global --add safe.directory /home/flutter/flutter-sdk'
-            sh 'flutter build web'
+            if(env.BRANCH_NAME == 'production'){
+                sh 'flutter build web -t lib/main_prod.dart'
+            } 
+            
+            else if(env.BRANCH_NAME == 'master'){
+                sh 'flutter build web -t lib/main_hml.dart'
+            }
+            
+            else if(env.BRANCH_NAME == 'main'){
+                sh 'flutter build web -t lib/main_dev.dart'
+            }
+            
         }
     }
 

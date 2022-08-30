@@ -235,7 +235,7 @@ packages:
     description:
       path: "."
       ref: main
-      resolved-ref: "6d27721e959381e62bd656063be5009c8eae62cf"
+      resolved-ref: "08ade1eb498ec3d9e3c8273477170664864af461"
       url: "git@github.com:Nasajon/flutter_core.git"
     source: git
     version: "0.0.1"

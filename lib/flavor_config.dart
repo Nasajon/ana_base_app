@@ -9,11 +9,11 @@ class FlavorConfig {
   static String get title {
     switch (appFlavor) {
       case Flavor.dev:
-        return 'Genial dev';
+        return 'Nasajon dev';
       case Flavor.hml:
-        return 'Genial hml';
+        return 'Nasajon hml';
       case Flavor.prod:
-        return 'Genial';
+        return 'Nasajon';
       default:
         return 'title';
     }
