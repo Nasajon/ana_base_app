@@ -235,7 +235,7 @@ packages:
     description:
       path: "."
       ref: main
-      resolved-ref: "55b405cc03df7c59ea63a35cd3f40b5ac1d6d9aa"
+      resolved-ref: "6d27721e959381e62bd656063be5009c8eae62cf"
       url: "git@github.com:Nasajon/flutter_core.git"
     source: git
     version: "0.0.1"
@@ -464,7 +464,7 @@ packages:
     description:
       path: "."
       ref: development
-      resolved-ref: "1c773251d0355086726b79e20a4ef0c8a7ffdd46"
+      resolved-ref: "8aa74e554e88c3431eeb6e18d85f399fd6b6bb45"
       url: "git@github.com:Nasajon/meutrabalho_mobile.git"
     source: git
     version: "0.0.1"
@@ -665,7 +665,7 @@ packages:
       name: shared_preferences_platform_interface
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.0.0"
+    version: "2.1.0"
   shared_preferences_web:
     dependency: transitive
     description:
