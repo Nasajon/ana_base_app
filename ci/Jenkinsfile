@@ -27,17 +27,6 @@ node('aws-codebuild'){
     //     }
     // }
 
-    stage('Flutter clean'){
-        docker.image('cirrusci/flutter:3.0.5').inside('-v /root/.ssh:/root/.ssh'){    
-            sh 'flutter clean'
-        }
-    }
-
-    stage('Flutter pub get'){
-        docker.image('cirrusci/flutter:3.0.5').inside('-v /root/.ssh:/root/.ssh'){    
-            sh 'flutter pub get'
-        }
-    }
 
     docker.image('fischerscode/flutter:3.0.5').inside("-v /root/.ssh:/root/.ssh"){    
         stage('Build'){
