@@ -244,7 +244,7 @@ packages:
     description:
       path: "."
       ref: main
-      resolved-ref: ac5d229539978e3d8eef0821657aedb403f9c3b1
+      resolved-ref: "1b1f4018149211dde67ae3ae4301ce8357457c29"
       url: "git@github.com:Nasajon/flutter_dependencies.git"
     source: git
     version: "0.0.1"
@@ -381,7 +381,7 @@ packages:
       name: image_picker_ios
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.8.5+6"
+    version: "0.8.6"
   image_picker_platform_interface:
     dependency: transitive
     description:
@@ -464,7 +464,7 @@ packages:
     description:
       path: "."
       ref: development
-      resolved-ref: c7c27a00db22b07ea4780c0cd1e742d56b97465a
+      resolved-ref: c8f2479dc59389bbf495f815b4677b0912d04e57
       url: "git@github.com:Nasajon/meutrabalho_mobile.git"
     source: git
     version: "0.0.1"
@@ -778,4 +778,4 @@ packages:
     version: "3.1.1"
 sdks:
   dart: ">=2.17.6 <3.0.0"
-  flutter: ">=2.10.0-0"
+  flutter: ">=2.10.0"
