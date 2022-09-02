@@ -464,7 +464,7 @@ packages:
     description:
       path: "."
       ref: development
-      resolved-ref: "7b321029a217bf8c917512f0f9508727393c0c9c"
+      resolved-ref: "13e17d3cf19c24d77123c29abe5daf6a81bd3602"
       url: "git@github.com:Nasajon/meutrabalho_mobile.git"
     source: git
     version: "0.0.1"
