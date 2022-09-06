@@ -155,6 +155,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.2.3"
+  dartz:
+    dependency: transitive
+    description:
+      name: dartz
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.10.1"
   dio:
     dependency: transitive
     description:
@@ -235,7 +242,7 @@ packages:
     description:
       path: "."
       ref: main
-      resolved-ref: "08ade1eb498ec3d9e3c8273477170664864af461"
+      resolved-ref: "3b4e411a8982fb8dca1b4ff61793b38c194d9203"
       url: "git@github.com:Nasajon/flutter_core.git"
     source: git
     version: "0.0.1"
@@ -244,7 +251,7 @@ packages:
     description:
       path: "."
       ref: main
-      resolved-ref: "1b1f4018149211dde67ae3ae4301ce8357457c29"
+      resolved-ref: "57748f4ef12039f182b7ed633b652badaafd3d6e"
       url: "git@github.com:Nasajon/flutter_dependencies.git"
     source: git
     version: "0.0.1"
@@ -464,7 +471,7 @@ packages:
     description:
       path: "."
       ref: development
-      resolved-ref: "80ac76214225628ccaed31cce983e1535c97786c"
+      resolved-ref: "993a0dc67a4608b64759c61c811fd4027363cb67"
       url: "git@github.com:Nasajon/meutrabalho_mobile.git"
     source: git
     version: "0.0.1"
