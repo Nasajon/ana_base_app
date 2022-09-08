@@ -134,6 +134,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.17.2"
+  csv:
+    dependency: transitive
+    description:
+      name: csv
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "5.0.1"
   cupertino_icons:
     dependency: "direct main"
     description:
@@ -242,7 +249,7 @@ packages:
     description:
       path: "."
       ref: main
-      resolved-ref: "3b4e411a8982fb8dca1b4ff61793b38c194d9203"
+      resolved-ref: ddbed0f05b84a730b900634f7517d36f74d071ec
       url: "git@github.com:Nasajon/flutter_core.git"
     source: git
     version: "0.0.1"
@@ -251,7 +258,7 @@ packages:
     description:
       path: "."
       ref: main
-      resolved-ref: "57748f4ef12039f182b7ed633b652badaafd3d6e"
+      resolved-ref: f20c752b6c28f346e9cd135f8e65130fd3d576ad
       url: "git@github.com:Nasajon/flutter_dependencies.git"
     source: git
     version: "0.0.1"
@@ -374,7 +381,7 @@ packages:
       name: image_picker_android
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.8.5+2"
+    version: "0.8.5+3"
   image_picker_for_web:
     dependency: transitive
     description:
@@ -471,7 +478,7 @@ packages:
     description:
       path: "."
       ref: development
-      resolved-ref: "03b067009e114c0cee35b1a01143894621ca6ab7"
+      resolved-ref: "7f74714bc4702e38b7db6e977f47694148c5f14b"
       url: "git@github.com:Nasajon/meutrabalho_mobile.git"
     source: git
     version: "0.0.1"
@@ -644,7 +651,7 @@ packages:
       name: shared_preferences_android
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.0.12"
+    version: "2.0.13"
   shared_preferences_ios:
     dependency: transitive
     description:
@@ -692,6 +699,20 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.99"
+  slang:
+    dependency: transitive
+    description:
+      name: slang
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.7.0"
+  slang_flutter:
+    dependency: transitive
+    description:
+      name: slang_flutter
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.7.0"
   source_span:
     dependency: transitive
     description:
