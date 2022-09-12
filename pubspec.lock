@@ -7,21 +7,21 @@ packages:
       name: _fe_analyzer_shared
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "46.0.0"
+    version: "47.0.0"
   analyzer:
     dependency: transitive
     description:
       name: analyzer
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "4.6.0"
+    version: "4.7.0"
   analyzer_plugin:
     dependency: transitive
     description:
       name: analyzer_plugin
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.10.0"
+    version: "0.11.1"
   ansicolor:
     dependency: transitive
     description:
@@ -147,7 +147,7 @@ packages:
       name: dart_code_metrics
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "4.17.1"
+    version: "4.18.0"
   dart_style:
     dependency: transitive
     description:
@@ -471,7 +471,7 @@ packages:
     description:
       path: "."
       ref: development
-      resolved-ref: "6fbf15d8e50d71efecb7422c2e1571d6bf0d8a58"
+      resolved-ref: "2ba49bd33b36496ce60c8ba79c961defda4cb065"
       url: "git@github.com:Nasajon/meutrabalho_mobile.git"
     source: git
     version: "0.0.1"
