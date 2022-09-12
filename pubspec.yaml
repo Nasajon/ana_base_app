@@ -30,27 +30,30 @@ dependencies:
   flutter:
     sdk: flutter
 
-  flutter_core:
-    git:
-      url: git@github.com:Nasajon/flutter_core.git
-      ref: main # branch name
-
-  flutter_dependencies:
-    git:
-      url: git@github.com:Nasajon/flutter_dependencies.git
-      ref: main # branch name
-
-  meutrabalhoapp:
-    git:
-      url: git@github.com:Nasajon/meutrabalho_mobile.git
-      ref: development # branch name
-
   # flutter_core:
-  #   path: "../flutter_core"
+  #   git:
+  #     url: git@github.com:Nasajon/flutter_core.git
+  #     ref: main # branch name
+
   # flutter_dependencies:
-  #   path: "../flutter_dependencies"
+  #   git:
+  #     url: git@github.com:Nasajon/flutter_dependencies.git
+  #     ref: main # branch name
+
   # meutrabalhoapp:
-  #   path: "../meutrabalho_mobile"
+  #   git:
+  #     url: git@github.com:Nasajon/meutrabalho_mobile.git
+  #     ref: development # branch name
+
+  flutter_core:
+    path: "../flutter_core"
+  flutter_dependencies:
+    path: "../flutter_dependencies"
+  meutrabalhoapp:
+    path: "../meutrabalho_mobile"
+
+  ded:
+    path: "../ded"
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -60,6 +63,8 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
+  build_runner: ^2.2.0
+  freezed: ^2.1.0+1
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
