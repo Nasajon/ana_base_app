@@ -54,15 +54,10 @@ class AnaBaseAppModuleBindings {
             di.get<AuthNotifier>(),
           ),
         ),
-        Bind.lazySingleton<AuthNotifier>(
+        Bind.singleton<AuthNotifier>(
           (di) => AuthNotifier(
             meuTrabalhoRepository: di.get<IMeuTrabalhoRepository>(),
           ),
         ),
-        // Bind.singleton<AnaHomeViewModel>(
-        //   (i) => AnaHomeViewModel(
-        //     authService: i.get<IAuthService>(),
-        //   ),
-        // ),
       ];
 }

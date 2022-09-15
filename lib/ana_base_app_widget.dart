@@ -1,12 +1,11 @@
 // ignore_for_file: library_private_types_in_public_api
 
-import 'package:ana_base_app/ana_base_app_module_routing.dart';
-import 'package:ded/ded_module_routing.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_core/flutter_core.dart';
 import 'package:flutter_dependencies/flutter_dependencies.dart';
 import 'package:meutrabalhoapp/meu_trabalho_mobile.dart';
+import 'package:skeleton/skeleton.dart';
 
 ///
 /// Material app definition
@@ -44,9 +43,18 @@ class _AnaBaseAppWidgetState extends ViewState<AnaBaseAppWidget, AuthNotifier> {
             return ViewModelListener<AuthNotifier, AuthState>(
               viewModel: viewModel,
               listener: (context, state) {
-                if (state.session!.apikey == '1') {
-                  Nav.navigate(DedRouting.classes);
+                switch (state.session!.apikey) {
+                  case '1':
+                    Nav.pushNamed(SkeletonRouting.multaList);
+
+                    break;
+                  case '2':
+                    Nav.pushNamed(MeuTrabalhoRouting.home);
+
+                    break;
+                  default:
                 }
+
                 // Nav.navigate(MeuTrabalhoRouting.home);
                 // state.maybeWhen(
                 //   orElse: () {

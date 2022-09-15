@@ -1,9 +1,8 @@
-import 'package:ded/ded.dart';
-import 'package:ded/ded_module_routing.dart';
 import 'package:flutter_core/flutter_core.dart';
 import 'package:flutter_dependencies/flutter_dependencies.dart';
 import 'package:meutrabalhoapp/meu_trabalho_mobile.dart';
 import 'package:meutrabalhoapp/meu_trabalho_module.dart';
+import 'package:skeleton/skeleton.dart';
 
 import 'ana_base_app_module.dart';
 import 'presentation/views/home/ana_home_module.dart';
@@ -43,8 +42,8 @@ abstract class AnaBaseAppModuleRouting {
         ),
 
         ModuleRoute(
-          DedRouting.root.path,
-          module: DedModule(),
+          SkeletonRouting.root.path,
+          module: SkeletonModule(),
           guards: [AsyncBindsGuard()],
         ),
       ];

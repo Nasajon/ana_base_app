@@ -4,6 +4,8 @@ import 'package:flutter_core/flutter_core.dart';
 import 'package:meutrabalhoapp/domain/domain.dart';
 import 'package:meutrabalhoapp/meu_trabalho_mobile.dart';
 
+import '../../presentation.dart';
+
 class AnaHomePage extends StatefulWidget {
   /// Creates a [AnaBaseAppWidget]
   const AnaHomePage({Key? key}) : super(key: key);
@@ -37,32 +39,23 @@ class _AnaHomePageState extends ViewState<AnaHomePage, AnaHomeViewModel> {
         builder: ((context, state) {
           return Center(
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                TextField(
-                  controller: _textEditingController,
+                ElevatedButton(
+                  onPressed: () {
+                    viewModel.saveSession(const Session(apikey: '1'));
+                  },
+                  child: Text(tr.ana.apps.skeleton),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 25,
                 ),
                 ElevatedButton(
-                    onPressed: () {
-                      viewModel.saveSession(
-                          Session(apikey: _textEditingController.text));
-                    },
-                    child: Text('Salvar código')),
-                SizedBox(
-                  height: 25,
+                  onPressed: () {
+                    viewModel.saveSession(const Session(apikey: '2'));
+                  },
+                  child: Text(tr.ana.apps.meuTrabalho),
                 ),
-                ElevatedButton(
-                    onPressed: () {
-                      viewModel.loadSession();
-                    },
-                    child: Text('Ler código')),
-                SizedBox(
-                  height: 25,
-                ),
-                if (viewModel.state.session != null)
-                  Text('Seu código é: ${viewModel.state.session!.apikey}'),
               ],
             ),
           );

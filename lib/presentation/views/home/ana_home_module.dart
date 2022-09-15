@@ -10,7 +10,7 @@ import 'ana_home_page.dart';
 class Home extends Module {
   @override
   final List<Bind> binds = [
-    Bind.singleton<AnaHomeViewModel>(
+    Bind.factory<AnaHomeViewModel>(
       (i) => AnaHomeViewModel(
         authNotifier: i.get<AuthNotifier>(),
       ),
