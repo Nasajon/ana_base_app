@@ -134,13 +134,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "5.0.1"
-  csv:
-    dependency: transitive
-    description:
-      name: csv
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "5.0.1"
   cupertino_icons:
     dependency: "direct main"
     description:
@@ -248,8 +241,8 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: main
-      resolved-ref: ddbed0f05b84a730b900634f7517d36f74d071ec
+      ref: master
+      resolved-ref: "66fe6c913843a93c4b01ecfe19e9ce21f21ba037"
       url: "git@github.com:Nasajon/flutter_core.git"
     source: git
     version: "0.0.1"
@@ -257,8 +250,8 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: main
-      resolved-ref: f20c752b6c28f346e9cd135f8e65130fd3d576ad
+      ref: master
+      resolved-ref: "9741e536e4c608b2a02e3daa1bd6976d5d08ef15"
       url: "git@github.com:Nasajon/flutter_dependencies.git"
     source: git
     version: "0.0.1"
@@ -477,8 +470,8 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: development
-      resolved-ref: "45808b14c247a02ab72ddc65c8857f4cd45ee42e"
+      ref: master
+      resolved-ref: "90b477c7ef36e6d1acf7466eda0ccda171b564dd"
       url: "git@github.com:Nasajon/meutrabalho_mobile.git"
     source: git
     version: "0.0.1"
