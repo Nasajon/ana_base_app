@@ -1,8 +1,8 @@
 import 'package:ana_base_app/presentation/views/home/viewmodels/viewmodels.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_core/flutter_core.dart';
-import 'package:meutrabalhoapp/domain/domain.dart';
-import 'package:meutrabalhoapp/meu_trabalho_mobile.dart';
+import 'package:meutrabalhoapp/meu_trabalho_mobile.dart' hide tr;
+import 'package:skeleton/skeleton_module_routing.dart';
 
 import '../../presentation.dart';
 
@@ -15,8 +15,6 @@ class AnaHomePage extends StatefulWidget {
 }
 
 class _AnaHomePageState extends ViewState<AnaHomePage, AnaHomeViewModel> {
-  final TextEditingController _textEditingController = TextEditingController();
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -43,7 +41,8 @@ class _AnaHomePageState extends ViewState<AnaHomePage, AnaHomeViewModel> {
               children: [
                 ElevatedButton(
                   onPressed: () {
-                    viewModel.saveSession(const Session(apikey: '1'));
+                    Nav.pushNamed(SkeletonRouting.multaList);
+                    // viewModel.saveSession(const Session(apikey: '1'));
                   },
                   child: Text(tr.ana.apps.skeleton),
                 ),
@@ -52,7 +51,9 @@ class _AnaHomePageState extends ViewState<AnaHomePage, AnaHomeViewModel> {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    viewModel.saveSession(const Session(apikey: '2'));
+                    Nav.pushNamed(MeuTrabalhoRouting.home);
+
+                    // viewModel.saveSession(const Session(apikey: '2'));
                   },
                   child: Text(tr.ana.apps.meuTrabalho),
                 ),

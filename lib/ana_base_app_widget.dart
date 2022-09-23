@@ -43,17 +43,21 @@ class _AnaBaseAppWidgetState extends ViewState<AnaBaseAppWidget, AuthNotifier> {
             return ViewModelListener<AuthNotifier, AuthState>(
               viewModel: viewModel,
               listener: (context, state) {
-                switch (state.session!.apikey) {
-                  case '1':
-                    Nav.pushNamed(SkeletonRouting.multaList);
+                // if (state.session!.apikey != null) {
+                // Nav.pushNamed(MeuTrabalhoRouting.home);
+                // }
+                // switch (state.session!.apikey) {
 
-                    break;
-                  case '2':
-                    Nav.pushNamed(MeuTrabalhoRouting.home);
+                //   case '1':
+                //     Nav.pushNamed(SkeletonRouting.multaList);
 
-                    break;
-                  default:
-                }
+                //     break;
+                //   case '2':
+                //     Nav.pushNamed(MeuTrabalhoRouting.home);
+
+                //     break;
+                //   default:
+                // }
 
                 // Nav.navigate(MeuTrabalhoRouting.home);
                 // state.maybeWhen(
