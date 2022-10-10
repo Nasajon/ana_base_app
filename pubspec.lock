@@ -7,21 +7,21 @@ packages:
       name: _fe_analyzer_shared
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "47.0.0"
+    version: "49.0.0"
   analyzer:
     dependency: transitive
     description:
       name: analyzer
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "4.7.0"
+    version: "5.1.0"
   analyzer_plugin:
     dependency: transitive
     description:
       name: analyzer_plugin
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.10.0"
+    version: "0.11.2"
   ansicolor:
     dependency: transitive
     description:
@@ -147,7 +147,7 @@ packages:
       name: dart_code_metrics
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "4.19.0"
+    version: "4.21.0"
   dart_style:
     dependency: transitive
     description:
@@ -367,7 +367,7 @@ packages:
       name: image_picker
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.8.5+3"
+    version: "0.8.6"
   image_picker_android:
     dependency: transitive
     description:
@@ -381,7 +381,7 @@ packages:
       name: image_picker_for_web
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.1.8"
+    version: "2.1.10"
   image_picker_ios:
     dependency: transitive
     description:
@@ -395,7 +395,7 @@ packages:
       name: image_picker_platform_interface
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.6.1"
+    version: "2.6.2"
   intl:
     dependency: transitive
     description:
@@ -430,7 +430,7 @@ packages:
       name: loader_overlay
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.0.10"
+    version: "2.1.0"
   logger:
     dependency: transitive
     description:
@@ -471,7 +471,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: "90b477c7ef36e6d1acf7466eda0ccda171b564dd"
+      resolved-ref: e9b7ac02ab8afe3164fc8aea34a2bd3cb5900ada
       url: "git@github.com:Nasajon/meutrabalho_mobile.git"
     source: git
     version: "0.0.1"
@@ -581,7 +581,7 @@ packages:
       name: path_provider_platform_interface
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.0.4"
+    version: "2.0.5"
   path_provider_windows:
     dependency: transitive
     description:
@@ -631,6 +631,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.1"
+  pub_updater:
+    dependency: transitive
+    description:
+      name: pub_updater
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.2.2"
   shared_preferences:
     dependency: transitive
     description:
@@ -798,5 +805,5 @@ packages:
     source: hosted
     version: "3.1.1"
 sdks:
-  dart: ">=2.17.6 <3.0.0"
+  dart: ">=2.18.0 <3.0.0"
   flutter: ">=2.10.0"
