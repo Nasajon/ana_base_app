@@ -251,7 +251,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: "9741e536e4c608b2a02e3daa1bd6976d5d08ef15"
+      resolved-ref: "77fd66d972d52faa2fe9f60599445b2bf62d9cfe"
       url: "git@github.com:Nasajon/flutter_dependencies.git"
     source: git
     version: "0.0.1"
@@ -471,7 +471,7 @@ packages:
     description:
       path: "."
       ref: master
-      resolved-ref: b734caa461b9b85ed37c1e60b133bcac9e8d0033
+      resolved-ref: "16aa60793a9a8e63ef66a45f8cf670c07fdf04a3"
       url: "git@github.com:Nasajon/meutrabalho_mobile.git"
     source: git
     version: "0.0.1"
