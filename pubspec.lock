@@ -241,8 +241,8 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: master
-      resolved-ref: "66fe6c913843a93c4b01ecfe19e9ce21f21ba037"
+      ref: production
+      resolved-ref: "1285bdc3d43f4c06f319c703dc2fee06492bce82"
       url: "git@github.com:Nasajon/flutter_core.git"
     source: git
     version: "0.0.1"
@@ -250,8 +250,8 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: master
-      resolved-ref: "77fd66d972d52faa2fe9f60599445b2bf62d9cfe"
+      ref: production
+      resolved-ref: "1846eb6a0f086568378a20716c96589556fec027"
       url: "git@github.com:Nasajon/flutter_dependencies.git"
     source: git
     version: "0.0.1"
@@ -470,8 +470,8 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: master
-      resolved-ref: "16aa60793a9a8e63ef66a45f8cf670c07fdf04a3"
+      ref: production
+      resolved-ref: fe15bbcd227687bf5b099f7c377dffcb09216589
       url: "git@github.com:Nasajon/meutrabalho_mobile.git"
     source: git
     version: "0.0.1"
