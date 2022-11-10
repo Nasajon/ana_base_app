@@ -8,10 +8,10 @@ import 'bootstrap.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  if (kDebugMode) {
-    await FormDataService.delete();
-  }
-  await FormDataService.load();
+  // if (kDebugMode) {
+  //   await FormDataService.delete();
+  // }
+  // await FormDataService.load();
 
   await AppConfiguration.loadFlavor(Flavor.hml);
 

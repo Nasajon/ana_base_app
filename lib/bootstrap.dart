@@ -35,9 +35,9 @@ Future<void> bootstrap() async {
     await _configureIntl();
 
     /// Set status bar color transparent
-    SystemChrome.setSystemUIOverlayStyle(
-      const SystemUiOverlayStyle(statusBarColor: Colors.transparent),
-    );
+    // SystemChrome.setSystemUIOverlayStyle(
+    //   const SystemUiOverlayStyle(statusBarColor: Colors.transparent),
+    // );
     await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
     Bloc.observer = _AppBlocObserver();
     runApp(

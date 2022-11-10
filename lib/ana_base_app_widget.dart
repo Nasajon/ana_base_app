@@ -75,6 +75,8 @@ class _AnaBaseAppWidgetState extends ViewState<AnaBaseAppWidget, AuthNotifier> {
               child: MaterialApp.router(
                 debugShowCheckedModeBanner: false,
                 // title: DM.get<Environment>().appName,
+                theme: ThemeFactory.light(),
+                // darkTheme: ThemeFactory.light(),
                 routeInformationParser: Modular.routeInformationParser,
                 routerDelegate: Modular.routerDelegate,
                 localizationsDelegates: const [

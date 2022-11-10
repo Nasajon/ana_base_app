@@ -1,7 +1,7 @@
+import 'package:ana_base_app/app_configuration.dart';
+import 'package:flutter_core/flutter_core.dart';
 import 'package:flutter_dependencies/flutter_dependencies.dart';
 import 'package:meutrabalhoapp/meu_trabalho_mobile.dart';
-
-import 'presentation/views/home/viewmodels/ana_home_viewmodel.dart';
 
 /// Base app module bindings
 class AnaBaseAppModuleBindings {
@@ -9,6 +9,8 @@ class AnaBaseAppModuleBindings {
   /// Module bindings
   ///
   static List<Bind> get binds => [
+        Bind.lazySingleton<Environment>((_) => AppConfiguration.environment),
+        Bind<AppColorScheme>((_) => baseColorScheme),
         ..._infrastructure,
         ..._datasources,
         ..._repositories,

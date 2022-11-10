@@ -24,4 +24,16 @@ class AppConfiguration {
 
     await dotenv.load(fileName: '.env/.env$suffix');
   }
+
+  static Environment get environment {
+    ThemeVersion themeVersion = dotenv.get('THEME_VERSION') == '2.0'
+        ? ThemeVersion.v2
+        : ThemeVersion.v1;
+
+    return Environment(
+      appName: FlavorConfig.title,
+      flavor: FlavorConfig.appFlavor,
+      themeVersion: themeVersion,
+    );
+  }
 }

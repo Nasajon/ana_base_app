@@ -35,29 +35,36 @@ class _AnaHomePageState extends ViewState<AnaHomePage, AnaHomeViewModel> {
           return previous.session != current.session;
         },
         builder: ((context, state) {
-          return Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                ElevatedButton(
-                  onPressed: () {
-                    Nav.pushNamed(SkeletonRouting.multaList);
-                    // viewModel.saveSession(const Session(apikey: '1'));
-                  },
-                  child: Text(tr.ana.apps.skeleton),
-                ),
-                const SizedBox(
-                  height: 25,
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    Nav.pushNamed(MeuTrabalhoRouting.home);
-
-                    // viewModel.saveSession(const Session(apikey: '2'));
-                  },
-                  child: Text(tr.ana.apps.meuTrabalho),
-                ),
-              ],
+          return Padding(
+            padding: EdgeInsets.all(Spacing.lg.value),
+            child: Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Image.asset(
+                    CoreAssets.anaLogo.keyName,
+                  ),
+                  Column(
+                    children: [
+                      ContainedButton.large(
+                        onPressed: () {
+                          Nav.pushNamed(SkeletonRouting.multaList);
+                        },
+                        child: Text(tr.ana.apps.skeleton),
+                      ),
+                      const SizedBox(
+                        height: 25,
+                      ),
+                      ContainedButton.large(
+                        onPressed: () {
+                          Nav.pushNamed(MeuTrabalhoRouting.admission);
+                        },
+                        child: Text(tr.ana.apps.meuTrabalho),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
             ),
           );
         }),
