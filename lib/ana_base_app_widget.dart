@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_core/flutter_core.dart';
 import 'package:flutter_dependencies/flutter_dependencies.dart';
 import 'package:meutrabalhoapp/meu_trabalho_mobile.dart';
-import 'package:skeleton/skeleton.dart';
 
 ///
 /// Material app definition

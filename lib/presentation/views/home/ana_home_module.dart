@@ -2,7 +2,6 @@ import 'package:ana_base_app/ana_base_app_module_routing.dart';
 import 'package:ana_base_app/presentation/views/home/viewmodels/ana_home_viewmodel.dart';
 import 'package:flutter_dependencies/flutter_dependencies.dart';
 import 'package:meutrabalhoapp/services/auth/auth_notifier.dart';
-import 'package:meutrabalhoapp/services/auth/auth_service.dart';
 
 import 'ana_home_page.dart';
 

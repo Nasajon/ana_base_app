@@ -57,7 +57,7 @@ class _AnaHomePageState extends ViewState<AnaHomePage, AnaHomeViewModel> {
                       ),
                       ContainedButton.large(
                         onPressed: () {
-                          Nav.pushNamed(MeuTrabalhoRouting.admission);
+                          Nav.pushNamed(MeuTrabalhoRouting.admissionDicas);
                         },
                         child: Text(tr.ana.apps.meuTrabalho),
                       ),
